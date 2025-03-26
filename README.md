@@ -1,2 +1,2 @@
 # Programming language
-[Zig]('https://ziglang.org/')
+[Zig](https://ziglang.org/)
