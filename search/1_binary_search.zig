@@ -24,9 +24,9 @@ pub fn main() !void {
 
     while (search_num != mid_value) {
         if (search_num > mid_value) {
-            low = mid_index;
+            low = mid_index + 1;
         } else {
-            high = mid_index;
+            high = mid_index - 1;
         }
 
         if (low > high) {
