@@ -14,8 +14,8 @@ func findSmallest(sl []int32) int {
 	}
 	return smallest_index
 }
-func SelectionSort() {
-	sl1 := []int32{10, 20, 11, 18, 16, 15, 9}
+
+func selectionSort(sl1 []int32) {
 	fmt.Printf("Original array: %v, len: %d \n", sl1, len(sl1))
 	sl1_size := len(sl1)
 	sorted_list := []int32{}
@@ -25,5 +25,12 @@ func SelectionSort() {
 		sl1 = append(sl1[:si], sl1[si+1:]...)
 	}
 	fmt.Printf("Sorted array: %v, len: %d \n", sorted_list, len(sorted_list))
+	fmt.Println()
+}
 
+func SelectionSortDemo() {
+	sl1 := []int32{10, 20, 11, 18, 16, 15, 9}
+	sl2 := []int32{11, 0, 11, -18, 16, 15, 19}
+	selectionSort(sl1)
+	selectionSort(sl2)
 }

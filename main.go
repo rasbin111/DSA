@@ -3,5 +3,5 @@ package main
 import "dsa/sort"
 
 func main() {
-	sort.SelectionSort()
+	sort.SelectionSortDemo()
 }
